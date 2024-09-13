@@ -1,0 +1,212 @@
+/* Dashboard bileşeni için stil dosyası */
+.dashboard-container {
+  padding: 20px;
+  background-color: rgb(159,159,159);
+  color: #e0e0e0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #040404; /* Başlık metni rengini siyah yap */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3a3a3a; /* Düğme üzerine gelindiğinde arka plan rengi */
+}
+
+.new-order-button {
+  background-color: #28a745; /* Yeşil renk kodu */
+  color: rgb(0, 0, 0);
+}
+
+.completed-orders-button {
+  background-color: #af0202; /* Kırmızı renk kodu */
+  color: rgb(0, 0, 0);
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-toggle button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.view-toggle .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.orders-list, .selected-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-card {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: rgb(14, 0, 0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px); /* Kart üzerine gelindiğinde yukarı hareket */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.7); /* Kart üzerine gelindiğinde gölge derinleşir */
+}
+
+.order-photo {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Fotoğraf ile metin arasına boşluk ekle */
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.custom-calendar {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* Takvim kapsayıcısının stilini güncelleyin */
+.calendar-container {
+  background-color: #333; /* Koyu arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Takvim arka planını ve kenar rengini ayarlayın */
+.react-calendar {
+  background-color: #333; /* Takvim arka plan rengi */
+  border: 1px solid #444; /* Takvim kenar rengi */
+  border-radius: 8px;
+}
+
+/* Tarihlerin metin rengini ayarlayın */
+.react-calendar__tile {
+  color: #fff; /* Tarih metni rengi */
+  font-size: 16px; /* Tarih metni boyutu */
+}
+
+/* Aktif tarih kutusunun arka plan rengini ayarlayın */
+.react-calendar__tile--active {
+  background-color: #555; /* Aktif tarih arka plan rengi */
+  color: #fff; /* Aktif tarih metni rengi */
+  border-radius: 4px;
+}
+
+/* Tarih kutusunun üzerine gelindiğinde arka plan rengini ayarlayın */
+.react-calendar__tile:hover {
+  background-color: #444; /* Üzerine gelindiğinde arka plan rengi */
+  color: #fff; /* Üzerine gelindiğinde metin rengi */
+  border-radius: 4px;
+}
+
+/* Hafta sonu günlerinin rengini ayarlayın */
+.react-calendar__month-view__days__day--weekend {
+  color: #ff6f61; /* Hafta sonu günleri rengi */
+}
+
+/* Navigasyon düğmelerinin arka plan rengini ve metin rengini ayarlayın */
+.react-calendar__navigation button {
+  background: #444; /* Navigasyon düğmeleri arka plan rengi */
+  color: #fff; /* Navigasyon düğmeleri metin rengi */
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* Navigasyon düğmeleri üzerine gelindiğinde arka plan rengini ayarlayın */
+.react-calendar__navigation button:hover {
+  background: #555; /* Üzerine gelindiğinde arka plan rengi */
+}
+
+/* Takvim başlıklarının stilini ayarlayın */
+.react-calendar__month-view__header {
+  color: #fff; /* Başlık metni rengi */
+}
+
+/* Takvim günlerinin stilini ayarlayın */
+.react-calendar__month-view__days__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Günlerin metin rengi */
+}
+
+/* Tarih kutularının içerik stilini güncelleyin */
+.tile-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sipariş sayısı stilini güncelleyin */
+.order-count {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Sipariş listesi stilini güncelleyin */
+.order-list {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Sipariş liste öğelerinin stilini güncelleyin */
+.order-list-item {
+  color: #fff; /* Beyaz metin rengi */
+  background-color: #444; /* Koyu gri arka plan rengi */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

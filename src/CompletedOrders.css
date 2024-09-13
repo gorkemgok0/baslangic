@@ -1,0 +1,53 @@
+/* Genel kaplama stili */
+.completed-orders-container {
+  background: #2c2c2c; /* Koyu arka plan rengi */
+  color: #e0e0e0; /* Açık metin rengi */
+  border-radius: 10px; /* Yuvarlak köşeler */
+  padding: 20px; /* Padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Belirgin gölge */
+  max-width: 800px; /* Maksimum genişlik */
+  margin: 20px auto; /* Merkezleme */
+}
+
+/* Başlık stili */
+.completed-orders-title {
+  font-size: 24px; /* Başlık boyutu */
+  font-weight: bold; /* Kalın yazı tipi */
+  margin-bottom: 20px; /* Alt boşluk */
+  color: #ffffff; /* Beyaz renk */
+}
+
+/* Sipariş öğeleri için stil */
+.completed-order-item {
+  background: #3e3e3e; /* Koyu gri arka plan rengi */
+  border-radius: 8px; /* Yuvarlak köşeler */
+  padding: 15px; /* İç padding */
+  margin-bottom: 15px; /* Alt boşluk */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Hafif gölge */
+  display: flex;
+  flex-direction: column; /* İçeriği dikey hizala */
+}
+
+/* Sipariş detay metinleri */
+.order-details {
+  color: #e0e0e0; /* Açık metin rengi */
+  font-size: 16px; /* Metin boyutu */
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* 'Siparişi Geri Döndür' butonu stili */
+.revert-order-button {
+  background-color: #007bff; /* Mavi arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none;
+  border-radius: 8px; /* Yuvarlak köşeler */
+  padding: 10px 15px; /* İç padding */
+  font-size: 16px; /* Font boyutu */
+  cursor: pointer; /* Tıklanabilir işaret */
+  transition: box-shadow 0.3s ease; /* Geçiş efektleri */
+}
+
+.revert-order-button:hover {
+  background-color: #0056b3; /* Hover durumunda daha koyu mavi */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+}
